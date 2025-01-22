@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+:root {
+    --primary: black;
+    --secondary: #f4db0b;
+}
+
+footer {
+    background-color: var(--primary);
+    color: var(--secondary);
+    height: 300px;
+    padding: 1rem;
+}
+
+footer h3 {
+    margin-top: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary);
+}
+
+nav {
+    background-color: var(--secondary);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    
+    flex-wrap: wrap;
+}
+
+nav .logo {
+    /* Convierto el div padre en flex para centrar los elementos hijos */
+    display: flex;
+    align-items: center;
+}
+
+nav h1 {
+    display: inline; /* Convierto el h1 en etiqueta de linea */
+    font-size: 2em;
+}
+
+nav ul li {
+    display: inline-block; /* Convierto los li en etiquetas de linea con estilo */
+    font-size: 1.3rem;
+    list-style-type: none; /* Saco las viñetas de la lista */
+    padding: .5rem 1rem;
+}
+
+nav ul li.selec{
+    font-weight: 700;
+}
+
+main section {
+    margin: 0 0 1.5rem 0;
+}
+
+.banner img {
+    width: 100%;
+}
+
+.carrusel {
+    padding: 1rem;
+}
+
+.carrusel h2 {
+    text-align: center;
+}
+
+.carrusel article {
+    display: inline-block;
+    padding: 1rem;
+}
+
+.carrusel article img {
+    width: 200px;
+}
+
+.cts {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 16px;
+}
+
+.cts article {
+    border-radius: 10px;
+    box-shadow: 2px 5px 10px lightgrey;
+    margin: 0 16px 16px 0;
+    min-width: 250px;
+    max-width: 300px;
+    padding: 1rem;
+}
+
+.searcher {
+    padding: 1rem;
+}
+
+.searcher #query {
+    padding: 1rem;
+    width: 300px;
+}
+
+.searcher button {
+    padding: 1rem;
+}
+
+.signin, .signup {
+    text-align: center;
+}
+
+.signin input {
+    padding: 10px;
+    width: 250px;
+}
+
+.signin button, .signup button {
+    padding: 10px;
+    background-color: var(--secondary);
+    border-radius: 5px;
+    border: solid 1px var(--primary);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.signin div, .signup div {
+    margin-bottom: 1rem;
+}
+
+/* Estilos de courses.html ↓↓↓↓ */
+.courses {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    padding: 1em;
+    text-align: center;
+}
+
+.courses article {
+    box-shadow: 2px 5px 10px lightgrey;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1em;
+    padding: 1em;
+    background-color: white;
+}
+
+
+
+
+@media (max-width: 700px) {
+    .courses article {
+        width: 95%;
+    }
+    
+    main {
+        background-color: antiquewhite;
+    }
+}
+
+@media (min-width: 701px) {
+    .courses article {
+        width: 700px;
+    }
+}
+
+
+@media (min-width: 1201px) {
+    .courses article {
+        width: 40%;
+    }
+}
