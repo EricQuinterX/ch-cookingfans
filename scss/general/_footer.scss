@@ -1,0 +1,11 @@
+@import '../utilidades/colores';
+
+footer {
+    padding: 2rem;
+    width: 100%;
+    background-color: $c-bg-secondary;
+
+    h3 {
+        margin-top: 1rem;
+    }
+}
