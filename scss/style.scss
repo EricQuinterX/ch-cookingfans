@@ -6,7 +6,9 @@
 
 @import 'general/nav';
 
+@import 'general/mq-desktop';
+
 main {
-    margin-top: 8rem;
+    margin-top: 6rem;
     margin-bottom: 2rem;
 }

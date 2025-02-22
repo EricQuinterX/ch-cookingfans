@@ -1,10 +1,9 @@
 @import '../utilidades/colores';
 
-@mixin card-style($width) {
+.card-style {
     border: none;
     border-radius: 0;
     margin: 0 0.5em;
-    width: $width;
     box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
 
     &:hover {
@@ -13,11 +12,12 @@
 }
 
 .card {
-    @include card-style(300px);
+    @extend .card-style;
 
     img {
         max-width: 100%;
-        max-height: 100%;
+        height: 250px;
+        object-fit: cover;
     }
     
     .card-body {
@@ -26,8 +26,4 @@
             border-color: $c-bg-primary;
         }
     }
-}
-
-.card-full {
-    @include card-style(90%);
 }

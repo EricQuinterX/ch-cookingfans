@@ -14,34 +14,24 @@ footer h3 {
   margin-top: 1rem;
 }
 
-.card {
+.card-style, .card {
   border: none;
   border-radius: 0;
   margin: 0 0.5em;
-  width: 300px;
   box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
 }
-.card:hover {
+.card-style:hover, .card:hover {
   cursor: pointer;
 }
+
 .card img {
   max-width: 100%;
-  max-height: 100%;
+  height: 250px;
+  object-fit: cover;
 }
 .card .card-body a {
   background-color: #F0A04B;
   border-color: #F0A04B;
-}
-
-.card-full {
-  border: none;
-  border-radius: 0;
-  margin: 0 0.5em;
-  width: 90%;
-  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
-}
-.card-full:hover {
-  cursor: pointer;
 }
 
 nav {
@@ -59,6 +49,7 @@ nav div .logo {
 nav div .logo h1 {
   display: inline; /* Convierto el h1 en etiqueta de linea */
   font-size: 2em;
+  margin-left: 0.5rem;
 }
 nav div #navbarNav ul li {
   display: inline-block; /* Convierto los li en etiquetas de linea con estilo */
@@ -70,8 +61,18 @@ nav div #navbarNav ul li.selec {
   font-weight: 700;
 }
 
+@media screen and (min-width: 1200px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main {
+    width: 1200px;
+  }
+}
 main {
-  margin-top: 8rem;
+  margin-top: 6rem;
   margin-bottom: 2rem;
 }
 
